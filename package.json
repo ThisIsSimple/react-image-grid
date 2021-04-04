@@ -1,0 +1,45 @@
+{
+  "name": "react-image-grid",
+  "version": "0.0.1",
+  "description": "Facebook-like image grid for react",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisIsSimple/react-image-grid.git"
+  },
+  "keywords": [
+    "react",
+    "facebook",
+    "image-grid",
+    "image",
+    "grid"
+  ],
+  "author": {
+    "name": "cordelia273",
+    "url": "https://cordelia273.space"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThisIsSimple/react-image-grid/issues"
+  },
+  "homepage": "https://github.com/ThisIsSimple/react-image-grid#readme",
+  "dependencies": {
+    "core-js": "3",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
