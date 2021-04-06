@@ -25,11 +25,15 @@ const App = () => {
 };
 ```
 
-Result:
-
 ## Options
 
 | option    | type   | description         | required | default |
 | --------- | ------ | ------------------- | -------- | ------- |
 | images    | array  | Array of image urls | Yes      | []      |
 | className | string |                     | No       | ''      |
+
+## Todo
+
+- [ ] onClick method.
+- [ ] when image is exact square.
+- [ ] other options.
