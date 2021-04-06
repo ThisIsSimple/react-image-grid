@@ -2,7 +2,7 @@
   "name": "react-image-grid",
   "version": "0.0.1",
   "description": "Facebook-like image grid for react",
-  "main": "dist/index.js",
+  "module": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,7 +29,6 @@
   "dependencies": {
     "core-js": "3",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
@@ -38,8 +37,20 @@
     "@babel/plugin-transform-react-jsx": "^7.13.12",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.13.13",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
     "babel-loader": "^8.2.2",
+    "rollup": "^2.44.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-serve": "^1.1.0",
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
