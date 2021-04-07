@@ -27,13 +27,14 @@ const App = () => {
 
 ## Options
 
-| option    | type   | description         | required | default |
-| --------- | ------ | ------------------- | -------- | ------- |
-| images    | array  | Array of image urls | Yes      | []      |
-| className | string |                     | No       | ''      |
+| option    | type     | description             | required | default  |
+| --------- | -------- | ----------------------- | -------- | -------- |
+| images    | array    | Array of image urls     | Yes      | []       |
+| className | string   | Class name of container | No       | ''       |
+| onClick   | function | On image click          | No       | () => {} |
 
 ## Todo
 
-- [ ] onClick method.
+- [x] onClick method.
 - [ ] when image is exact square.
 - [ ] other options.
