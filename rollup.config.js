@@ -5,6 +5,9 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 
@@ -19,12 +22,10 @@ export default {
     peerDepsExternal(),
     nodeResolve({extensions}),
     replace({
-      'process.env.NODE_ENV': JSON.stringify( 'development' )
+      'process.env.NODE_ENV': JSON.stringify( 'production' ),
+      preventAssignment: true,
     }),
-    // babel({
-    //   presets: ["@babel/preset-react"],
-    // }),
-    babel({ extensions, include: ['lib/**/*'], rumtimeHelpers: true }),
+    babel({ extensions, include: ['lib/**/*'], babelHelpers: 'runtime' }),
     commonjs({
       include: 'node_modules/**',
     }),
