@@ -918,8 +918,8 @@ function v(){return (v=Object.assign||function(e){for(var t=1;t<arguments.length
 var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 var Overlay = Ye.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  background-color: rgba(0, 0, 0, 0.5);\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 2.5rem;\n"])));
 var ImgCell = Ye.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral([""])));
-var Img = Ye.img(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  object-fit: cover;\n"])));
-var Container = Ye.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  display: grid;\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n  gap: 0.2rem;\n  ", ":nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    ", "\n    ", "\n    ", "\n    ", "\n  }\n  ", "\n    position: relative;\n    &:after {\n      content: '';\n      display: block;\n      padding-bottom: 100%;\n    }\n    ", " {\n      width: 100%;\n      height: 100%;\n      position: absolute;\n    }\n  }\n"])), function (props) {
+var Img = Ye.img(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n"])));
+var Container = Ye.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  display: grid;\n  gap: 0.2rem;\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n  ", ":nth-child(1) {\n    grid-column-start: 1;\n    grid-row-start: 1;\n    ", "\n    ", "\n    ", "\n    ", "\n  }\n  ", "\n    position: relative;\n    &:after {\n      content: '';\n      display: block;\n      padding-bottom: 100%;\n    }\n    ", " {\n      width: 100%;\n      height: 100%;\n      left: 0;\n      top: 0;\n      position: absolute;\n    }\n  }\n"])), function (props) {
   return props.count === 2 && "grid-template-columns: repeat(2, 1fr);";
 }, function (props) {
   return props.isHorizontal && props.count === 3 && "grid-template-columns: repeat(2, 1fr);";
@@ -977,7 +977,6 @@ var ImageGrid = function ImageGrid(_ref) {
   }, images.map(function (image, index) {
     return index <= 3 && /*#__PURE__*/r$1.createElement(ImgCell, {
       key: image,
-      className: "shadow",
       onClick: function onClick(e) {
         return _onClick(image);
       }
