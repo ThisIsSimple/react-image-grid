@@ -1,11 +1,16 @@
 # React Image Grid
 
-Facebook-like image grid for react. (beta)
+Facebook-like Image Grid for React.
 
 ## Installation
 
-`npm i react-image-grid`
-`yarn add react-image-grid`
+`npm i @cordelia273/react-image-grid`
+
+`yarn add @cordelia273/react-image-grid`
+
+## Structure
+
+
 
 ## Usage
 
@@ -21,17 +26,23 @@ const App = () => {
     "https://cdn.pixabay.com/photo/2019/10/15/21/34/cat-4552983_1280.jpg",
   ];
 
-  return <ReactImageGrid images={images} />;
+  return (
+    <div style={{ maxWidth: 750, margin: "auto" }}>
+      <ReactImageGrid images={images} />
+    </div>
+  );
 };
 ```
 
+![Result Screenshot](./screenshot.png)
+
 ## Options
 
-| option    | type     | description             | required | default  |
-| --------- | -------- | ----------------------- | -------- | -------- |
-| images    | array    | Array of image urls     | Yes      | []       |
-| className | string   | Class name of container | No       | ''       |
-| onClick   | function | On image click          | No       | () => {} |
+| option         | type   | description                     | required | default  |
+| -------------- | ------ | ------------------------------- | -------- | -------- |
+| images         | array  | array of image urls             | Yes      | []       |
+| className      | string | class name of container         | No       | ''       |
+| onClick        | func   | return image url on image click | No       | () => {} |
 
 ## Todo
 

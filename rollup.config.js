@@ -34,7 +34,7 @@ export default {
       verbose: true,
       contentBase: ["", "public"],
       host: "localhost",
-      port: 3000,
+      port: 3001,
     }),
     livereload({ watch: "dist" }),
   ]

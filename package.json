@@ -1,5 +1,5 @@
 {
-  "name": "react-image-grid",
+  "name": "@cordelia273/react-image-grid",
   "version": "0.0.1",
   "description": "Facebook-like image grid for react",
   "module": "dist/bundle.js",
