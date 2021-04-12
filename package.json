@@ -1,6 +1,6 @@
 {
   "name": "@cordelia273/react-image-grid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Facebook-like image grid for react",
   "module": "dist/bundle.js",
   "scripts": {
