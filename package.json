@@ -1,6 +1,6 @@
 {
   "name": "@cordelia273/react-image-grid",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Facebook-like image grid for react",
   "module": "dist/bundle.js",
   "scripts": {
@@ -29,6 +29,8 @@
   "dependencies": {
     "core-js": "3",
     "prop-types": "^15.7.2",
+    "react-image-gallery": "^1.0.9",
+    "react-responsive-modal": "^6.0.1",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
@@ -48,6 +50,7 @@
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-styles": "^3.14.1",
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0"
   },

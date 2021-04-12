@@ -6,6 +6,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import dotenv from 'dotenv';
+import styles from "rollup-plugin-styles";
 
 dotenv.config();
 
@@ -19,6 +20,7 @@ export default {
     sourcemap: true,
   },
   plugins: [
+    styles(),
     peerDepsExternal(),
     nodeResolve({extensions}),
     replace({

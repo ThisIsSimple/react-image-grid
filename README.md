@@ -10,12 +10,10 @@ Facebook-like Image Grid for React.
 
 ## Structure
 
-
-
 ## Usage
 
 ```jsx
-import ReactImageGrid from "react-image-grid";
+import ReactImageGrid from "@cordelia273/react-image-grid";
 
 const App = () => {
   const images = [
@@ -38,14 +36,9 @@ const App = () => {
 
 ## Options
 
-| option         | type   | description                     | required | default  |
-| -------------- | ------ | ------------------------------- | -------- | -------- |
-| images         | array  | array of image urls             | Yes      | []       |
-| className      | string | class name of container         | No       | ''       |
-| onClick        | func   | return image url on image click | No       | () => {} |
-
-## Todo
-
-- [x] onClick method.
-- [ ] when image is exact square.
-- [ ] other options.
+| option    | type   | description                       | required | default  |
+| --------- | ------ | --------------------------------- | -------- | -------- |
+| images    | array  | array of image urls               | Yes      | []       |
+| className | string | class name of container           | No       | ''       |
+| onClick   | func   | return image url on image click   | No       | () => {} |
+| modal     | bool   | show modal gallery on iamge click | No       | true     |

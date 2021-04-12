@@ -1,0 +1,7 @@
+.image-gallery {
+  width: 100vw;
+}
+
+.image-gallery *:focus {
+  outline: none;
+}
