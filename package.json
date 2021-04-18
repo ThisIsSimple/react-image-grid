@@ -15,7 +15,9 @@
     "facebook",
     "image-grid",
     "image",
-    "grid"
+    "grid",
+    "gallery",
+    "react-image-grid"
   ],
   "author": {
     "name": "cordelia273",
